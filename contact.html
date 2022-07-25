@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-shadow: 2px 2px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .nav {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: black;
+
+        }
+
+        .nav a {
+            font-family: 'Poppins', sans-serif;
+            float: left;
+            display: block;
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+        }
+
+        .nav a:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .nav a.logo {
+            font-family: 'Poppins', sans-serif;
+            background-color: red;
+            color: white;
+
+        }
+
+        .nav .search-container {
+            float: right;
+        }
+
+        .nav input[type=text] {
+            width: 500px;
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .nav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 800px;
+            background: red;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 1080px) {
+            .nav .search-container {
+                float: none;
+            }
+
+            .nav a,
+            .nav input[type=text],
+            .nav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .nav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+
+        .nav ul {
+            list-style: none;
+            color: azure;
+            position: absolute;
+            top: -8px;
+            right: 0
+        }
+
+        .cart {
+            position: absolute;
+            filter: invert(100%);
+            background-color: white;
+            top: 25px;
+            right: 1;
+            height: 20px;
+            width: 20px;
+        }
+
+        footer {
+            font-family: 'Poppins', sans-serif;
+            background-color: red;
+            text-align: center;
+            color: white;
+            display: table;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: black;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+        }
+
+        footer a:hover {
+            background-color: red;
+            color: white;
+        }
+
+        body {
+            background: silver;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a class="logo" href="#logo">LOGO</a>
+        <a href="home.html">HOME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="#about">ABOUT ME</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="" name="search">
+                <button type="submit"><img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png"
+                        style="display: flex; justify-content: cemter; height: 20px; width: 20px; filter: invert(100%);"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li>SIGN IN / DEALER LOCATOR</li>
+            <li>VIEW CART &nbsp;<img class="cart"
+                    src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg"> </li>
+        </ul>
+    </div>
+
+    </div>
+    <footer id="">
+        <a href="mailto:hege@example.com">hege@example.com</a>
+        <a href="mailto:hege@example.com">hege@example.com</a>
+        <a href="mailto:hege@example.com">hege@example.com</a>
+        <a href="mailto:hege@example.com">hege@example.com</a>
+    </footer>
+</body>
+
+</html>
